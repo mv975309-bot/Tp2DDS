@@ -87,3 +87,55 @@ h1 {
   background: #f44336;
   color: white;
 }
+/* ========================= */
+/* 📱 RESPONSIVE CELULAR */
+/* NO TOCA EL DISEÑO DE PC */
+/* ========================= */
+
+@media (max-width: 768px){
+
+  /* todo pasa a columna */
+  .app{
+    flex-direction: column !important;
+  }
+
+  /* formulario ocupa todo el ancho */
+  .addItem{
+    width: 100% !important;
+  }
+
+  /* lista ocupa todo el ancho */
+  .itemList{
+    width: 100% !important;
+  }
+
+  /* inputs uno debajo del otro */
+  .addItem input{
+    width:100%;
+    margin-bottom:10px;
+  }
+
+  /* cada item vertical */
+  .item{
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap:10px;
+  }
+
+  /* botones en fila */
+  .botonesItem{
+    width:100%;
+    display:flex;
+    gap:10px;
+  }
+
+  .botonesItem button{
+    flex:1;
+  }
+
+  h1{
+    font-size:24px;
+    text-align:center;
+  }
+
+}
